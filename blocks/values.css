@@ -1,0 +1,82 @@
+.values {
+  padding: 50px 100px 70px;
+}
+
+.values_title {
+  font-size: 38px;
+  font-family: "Playfair Display", serif;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.values__grid {
+  margin: 3rem auto;
+  max-width: 1184px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.value {
+  width: 250px;
+  height: 250px;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.value__name {
+  font-size: 18px;
+  color: #e1c18f;
+}
+
+.value__description {
+  font-size: 14px;
+  color: antiquewhite;
+  margin-top: 15px;
+  line-height: 20px;
+}
+
+.ethic__value {
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(7, 23, 46, 1), rgba(4, 9, 30, 0.5)),
+    url(/images/acessibilidade.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.determination__value {
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(7, 23, 46, 1), rgba(4, 9, 30, 0.6)),
+    url(/images/acessibilidade.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.excelence__value {
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(7, 23, 46, 1), rgba(4, 9, 30, 0.6)),
+    url(/images/acessibilidade.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.commitment__value {
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(7, 23, 46, 1), rgba(4, 9, 30, 0.6)),
+    url(/images/acessibilidade.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.values__grid:hover div:not(:hover) {
+  opacity: 0.5;
+}

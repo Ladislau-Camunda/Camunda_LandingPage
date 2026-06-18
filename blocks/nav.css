@@ -1,0 +1,81 @@
+.nav {
+  padding: 2% 6%;
+  width: 100vw;
+  max-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  transition: 200ms ease-in background-color, 200ms ease-in box-shadow;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 200px;
+  color: rgb(171, 129, 60);
+  text-decoration: none;
+  text-align: center;
+}
+
+.firm-name {
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+}
+
+.firm-sub {
+  font-size: 22px;
+  font-family: "Lora", serif;
+}
+
+.nav-img {
+  max-width: 70px;
+}
+
+.nav-links {
+  text-align: right;
+  width: 380px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  color: rgb(171, 129, 60);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #e1c18f;
+  box-shadow: 0 0 0.5rem rgba(58, 16, 22, 0.5);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.active_nav {
+  background-color: rgba(7, 23, 46, 1);
+  box-shadow: 0 0 0.6rem rgba(7, 23, 46, 0.8);
+  max-height: 100px;
+}
+.active_nav .nav-links ul li::after {
+  background: antiquewhite;
+  box-shadow: 0 0 0.5rem rgba(0, 5, 32, 0.849);
+}
+
+.active_nav .nav-img {
+  max-width: 60px;
+  margin-top: 0;
+}
